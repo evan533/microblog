@@ -1,0 +1,105 @@
+2020-08-27 15:47:53,872 ERROR: Exception on /edit_profile [POST] [in d:\work\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\work\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\work\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Work\microblog\app\routes.py", line 79, in edit_profile
+    if form.validate_on_submit():
+  File "d:\work\microblog\venv\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "D:\Work\microblog\app\forms.py", line 42, in validate_username
+    user = User.query.filter_by(username = self.username.data).first()
+UnboundLocalError: local variable 'user' referenced before assignment
+2020-08-27 15:49:56,822 ERROR: Exception on /edit_profile [POST] [in d:\work\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\work\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\work\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Work\microblog\app\routes.py", line 79, in edit_profile
+    if form.validate_on_submit():
+  File "d:\work\microblog\venv\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "D:\Work\microblog\app\forms.py", line 42, in validate_username
+    user = User.query.filter_by(username = self.username.data).first()
+UnboundLocalError: local variable 'user' referenced before assignment
+2020-08-27 15:49:58,983 ERROR: Exception on /edit_profile [POST] [in d:\work\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\work\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\work\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\work\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Work\microblog\app\routes.py", line 79, in edit_profile
+    if form.validate_on_submit():
+  File "d:\work\microblog\venv\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "d:\work\microblog\venv\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "D:\Work\microblog\app\forms.py", line 42, in validate_username
+    user = User.query.filter_by(username = self.username.data).first()
+UnboundLocalError: local variable 'user' referenced before assignment
+2020-08-27 15:51:37,435 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 15:52:18,625 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:09:08,778 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:09:19,513 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:10:24,696 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:14:03,448 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:15:51,435 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:17:28,479 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:17:44,699 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:19:43,297 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:27:22,836 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
+2020-08-27 16:27:32,582 INFO: Microblog startup [in D:\Work\microblog\app\__init__.py:45]
